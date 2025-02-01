@@ -5,31 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dropdown Events</title>
+    <title>Monthly Sales Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
-    <h2>Monthly Sales Revenue</h2>
-    
-
-    <select id="selDataset">
-        <option value="January">January</option>
-        <option value="February">February</option>
-        <option value="March">March</option>
-        <option value="April">April</option>
-        <option value="May">May</option>
-        <option value="June">June</option>
-        <option value="July">July</option>
-        <option value="August">August</option>
-        <option value="September">September</option>
-        <option value="October">October</option>
-        <option value="November">November</option>
-        <option value="December">December</option>
-    </select>
-
-    <div id="plot"></div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 p-5 text-center bg-light">
+            <h1>Monthly Sales By Category</h1>
+            <p>Explore the interactive charts below</p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card card-body bg-light">
+              <h6>Month</h6>
+              <select id="selDataset" class="form-select" onchange="optionChanged(this.value)">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div id="plot" style="width:100%; height:500px;"></div>
+          </div>
+        </div>
+    </div>
 
     <script src="data_new.js"></script>
     <script src="plot.js"></script>
