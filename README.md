@@ -53,10 +53,16 @@ https://www.kaggle.com/datasets/jacksondivakarr/online-shopping-dataset
 
 4. Output: Normalized tables were exported as CSV files for further processing and integration into the database.
 5. Database Schema Design: The database schema was designed using QuickDBD for relational datsbase design. Primary keys were assigned to uniquely identify each record in a table, while foreign keys were established to define relationships between tables. 
+![image_alt](https://github.com/ruprekhab/online_shopping/blob/main/Images/ERD.png)
+
 6. Database Creation: A new PostgreSQL database was created using the designed schema.
 The exported CSV files were imported into the corresponding tables, populating the database with cleaned, normalized data.
 7. Flask API Development: A Flask-based API was developed to interface with the PostgreSQL database, providing endpoints for retrieving specific datasets. The API’s home page includes detailed instructions for querying the database across various use cases. Designed to be lightweight, flexible, and user-friendly, the API is well-suited for quick prototyping and real-time data access. The Flask application instance was created using the main Flask class, while psycopg2 was employed to establish a connection between Python and the online shopping database for executing queries efficiently.
-8. Interactive Visualizations: The data was processed and exported into a JavaScript file to create an interactive visualization. Using HTML and JavaScript, a dynamic interface was developed, allowing users to explore sales by category for a selected month via a dropdown menu. Connection to PostgreSQL was achieved using SQLAlchemy for seamless data retrieval, with data processing and transformation performed using Pandas before exporting it as JSON. Dynamic bar charts were created with Plotly, updating interactively based on user input. The webpage was structured with HTML, linking scripts to enable interactivity and responsive chart rendering, providing an engaging and user-friendly experience for data exploration.
+![image_alt](https://github.com/ruprekhab/online_shopping/blob/main/Images/Flask_API.png)
+
+8. Interactive Visualizations: The data was processed and exported into a JavaScript file to create an interactive visualization. Using HTML and JavaScript, a dynamic interface was developed, allowing users to explore sales by category for a selected month via a dropdown menu. Connection to PostgreSQL was achieved using SQLAlchemy for seamless data retrieval, with data processing and transformation performed using Pandas before exporting it as JSON. Dynamic bar charts were created with Plotly, updating interactively based on user input. The webpage was structured with HTML, linking scripts to enable interactivity and responsive chart rendering, providing an engaging and user-friendly experience for data exploration. Click below to view the deployed page!
+   
+  [Click here to view the deployed page](https://ruprekhab.github.io/online_shopping/)
 
    
 ## Advantages of Choosing PostgreSQL for This Project
