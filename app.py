@@ -8,7 +8,7 @@ app = Flask(__name__)
 db_config = {
     'dbname': 'online_shopping',
     'user': 'postgres',
-    'password': 'your PostgreSQL password',
+    'password': 'password',
     'host': 'localhost',
     'port': 5432
 }
